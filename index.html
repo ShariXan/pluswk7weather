@@ -3,36 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plus Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Vanilla Weather</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Adelaide</h1>
-        <p>
-          Wednesday 13:00, sunny
-          <br />
-          Humidity: 40%, Wind: 2km/h
-        </p>
-      </div>
-      <div>🌤️ 24°C</div>
-    </main>
+    <div class="weather">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">Adelaide</h1>
+            <p class="weather-details">
+              Wednesday 13:00, sunny
+              <br />
+              Humidity: <strong>30%</strong>, Wind: <strong>2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temp-container">
+            <div class="weather-icon">🌤️</div>
+            <div class="weather-temp">24</div>
+            <div class="weatehr-unit">°C</div>
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/ShariXan" target="_blank"> S. Abdul Razak </a>
-      hosted on
-      <a href="https://github.com/ShariXan?tab=repositories" target="_blank">
-        Github
-      </a>
-      and
-      <a href="https://pluswk7weather.netlify.app/" target="_blank"> Netlify</a>
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/ShariXan" target="_blank">
+          S. Abdul Razak
+        </a>
+        hosted on
+        <a href="https://github.com/ShariXan?tab=repositories" target="_blank">
+          Github
+        </a>
+        and
+        <a href="https://pluswk7weather.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
