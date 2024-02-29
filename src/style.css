@@ -68,15 +68,14 @@ main {
 .weather-temp-container {
   display: flex;
 }
-
 .weather-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 
 .weather-temp {
-  font-size: 88px;
-  margin-left: 10px;
+  font-size: 75px;
+  line-height: 88px;
   font-weight: bold;
 }
 
